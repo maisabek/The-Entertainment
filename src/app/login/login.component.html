@@ -1,0 +1,50 @@
+<div class="carou">
+    <div class="skitter skitter-large">
+      <ul>
+        <li>
+          <a href="#cut"><img src="assets/images/login-slider2.jpg" class="cut" /></a>
+          <div class="label_text"><p>cut</p></div>
+        </li>
+        <li>
+          <a href="#swapBlocks"><img src="assets/images/login-slider.jpg" class="swapBlocks" /></a>
+          <div class="label_text"><p>swapBlocks</p></div>
+        </li>
+        <li>
+          <a href="#swapBarsBack"><img src="assets/images/movie-home4.jpg" class="swapBarsBack" /></a>
+          <div class="label_text"><p>swapBarsBack</p></div>
+        </li>
+      </ul>
+      
+    </div>
+    <h5>Manage Your Order</h5>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+<div class="heade">
+  <h5>Log In</h5>
+<form [formGroup]='contactsForm' (ngSubmit)='saveform()'>
+<div class="form-group group1">
+    <label><i class="fa fa-user" aria-hidden="true"></i>
+      </label>
+ <input type="text" placeholder="Email" formControlName='userEmail' class="form-contol">
+<div *ngIf="contactsForm.controls.userEmail.touched && contactsForm.controls.userEmail.errors != null" class="alert text-danger">UserEmail invalid</div>
+</div>
+
+<div class="form-group group2">
+<label><i class="fa fa-unlock-alt" aria-hidden="true"></i></label>
+<input type="password" placeholder="Password" formControlName='password' class="form-contol">
+<div *ngIf="contactsForm.controls.password.touched && contactsForm.controls.password.errors != null" class="alert text-danger">Password Must Start captail Latter</div>
+
+</div>
+<a routerLink='/gpsdata'><button [disabled]='contactsForm.invalid' type="submit" class="btn-btn-info">send</button></a>
+</form>
+<a href="">forgot password ?</a>
+<div class="social">
+ <ul>
+     <li><a href="#" class="facebook"><span class="fa fa-facebook"></span></a></li>
+     <li><a href="#" class="twitter"><span class="fa fa-twitter"></span></a></li>
+     <li><a href="#" class="google"><span class="fa fa-google-plus"></span></a></li>
+ </ul>
+</div></div>
+
+
+</div>

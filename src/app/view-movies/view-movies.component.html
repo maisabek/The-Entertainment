@@ -1,0 +1,26 @@
+<router-outlet></router-outlet>
+<div class="container text-light">
+    <div class="navPagination py-2 my-8 w-25 m-auto rounded">
+        <ul class="list-unstyled d-flex justify-content-around">
+            <li *ngFor="let page of pages" (click)='changePage(page)'>{{page}}</li>
+        </ul>
+
+    </div>
+    <div class="row">
+        <div *ngFor="let movie of movieContainer; let i = index" class="col-md-3">
+            <div class="movie-card rounded my-4 text-light">
+                <a [routerLink]="['/displayDetails',i]">
+                    <img class="img-fluid" [src]="imagePrefix+movie.poster_path">
+                    <div class="movie-desc py-3 text-light">
+                        <h5 class="pl-3">{{movie.title}}</h5>
+                        <p class="pl-3">Click To Show Details</p>
+                        <i class="fa fa-star pl-3" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

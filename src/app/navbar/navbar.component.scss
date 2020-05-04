@@ -1,0 +1,4 @@
+.nav{box-shadow: 0px 0px 20px rgb(10, 10, 10);background-color: rgba(0, 0, 0,.9);position: fixed;z-index: 2;width: 100%; border-bottom: 1px dotted rgb(82, 60, 4);}
+.nav img{height: 46px;}
+.nav li a{cursor: pointer;transition: color 1s;color:white;text-decoration: none;}
+.nav li a:hover{color:rgb(139, 102, 8);}

@@ -1,0 +1,31 @@
+.header{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.4)),url(src/assets/images/movie-home5.jpg);
+    min-height: 790px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    // border-bottom: 1px dotted rgb(82, 60, 4);
+}
+.overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: rgba(0, 0, 0, 0.7);
+    width:100%;
+    height: 100%;
+}
+.container-para{
+     margin-top: 25%;
+    margin-left: 45%;
+}
+.btn{
+    color: white;
+    background-color: rgb(82, 60, 4);
+    margin-left: 1%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+
+}
+.about p{margin-top: 20%;}

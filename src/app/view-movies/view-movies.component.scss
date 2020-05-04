@@ -1,0 +1,21 @@
+.movie-card{
+    position: relative;
+    overflow: hidden;
+}
+img{transition: transform 1s;}
+.movie-card:hover .movie-desc{top:0}
+.movie-card:hover img{transform:scale(1.2)}
+.movie-desc{
+    position: absolute;
+    top:100%;
+    left:0;
+    width:100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    transition: top 1s;
+}
+.navPagination{
+    background-color:black !important;
+    box-shadow: 0px 0px 20px rgb(82, 81, 81);
+}
+.navPagination li{cursor: pointer;}
